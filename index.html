@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDaunan | Wastra Sasirangan Murni Warna Alam Kampung Seberang Mesjid</title>
+    <meta name="description" content="Studio wastra Sasirangan pewarna botani Kalimantan di Kampung Seberang Mesjid, Banjarmasin. Busana adem ramah lingkungan tanpa limbah kimia di Sungai Martapura." />
+
+    <!-- Google Fonts Preconnect & Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="DDaunan | Wastra Sasirangan Murni Warna Alam Banjarmasin" />
+    <meta property="og:description" content="Menjaga warisan jelujur Banjar dengan pigmen dedaunan Kalimantan tanpa menyisakan limbah kimia di Sungai Martapura." />
+    <meta property="og:type" content="website" />
+  </head>
+  <body class="min-h-screen bg-[#F6F4EE] text-[#1E2D24] antialiased selection:bg-[#8A5A12] selection:text-white">
+    <!-- Background Atmospheric Noise Texture -->
+    <div class="pointer-events-none fixed inset-0 z-50 bg-noise opacity-30"></div>
+
+    <!-- SEC-01: Sticky Dynamic Navbar -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
+        <!-- Brand Logo Typography -->
+        <a href="#" class="tap-target group flex items-center gap-2" aria-label="DDaunan Beranda">
+          <span class="font-serif text-2xl font-bold tracking-tight text-[#1E2D24] transition-colors group-hover:text-[#8A5A12] sm:text-3xl">
+            DDaunan
+          </span>
+          <span class="rounded-full bg-[#8A5A12]/15 px-2 py-0.5 text-[10px] font-semibold tracking-wider text-[#8A5A12] uppercase">
+            Warna Alam
+          </span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7 text-xs font-semibold uppercase tracking-wider text-[#1E2D24]/80" aria-label="Navigasi Utama">
+          <a href="#filosofi" class="transition-colors hover:text-[#8A5A12]">Filosofi</a>
+          <a href="#resep-botani" class="transition-colors hover:text-[#8A5A12]">Resep Botani</a>
+          <a href="#proses-waktu" class="transition-colors hover:text-[#8A5A12]">Proses 10 Hari</a>
+          <a href="#katalog" class="transition-colors hover:text-[#8A5A12]">Katalog Wastra</a>
+          <a href="#lokakarya" class="transition-colors hover:text-[#8A5A12]">Lokakarya</a>
+          <a href="#perajin" class="transition-colors hover:text-[#8A5A12]">Ibu Perajin</a>
+          <a href="#lokasi" class="transition-colors hover:text-[#8A5A12]">Studio Kami</a>
+        </nav>
+
+        <!-- Right Action Button & Mobile Toggle -->
+        <div class="flex items-center gap-3">
+          <a
+            href="https://wa.me/6281255501928?text=Halo%20Studio%20DDaunan,%20saya%20ingin%20berkunjung%20ke%20studio%20di%20Seberang%20Mesjid"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="tap-target hidden md:inline-flex items-center rounded-full bg-[#1E2D24] px-5 py-2 text-xs font-semibold text-[#F6F4EE] transition-all hover:bg-[#8A5A12] active:scale-95"
+          >
+            Reservasi Kunjungan
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button
+            id="mobile-menu-toggle"
+            type="button"
+            class="tap-target lg:hidden rounded-lg p-2 text-[#1E2D24] hover:bg-[#E4E7DF]"
+            aria-label="Buka Menu Navigasi"
+            aria-expanded="false"
+          >
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="hidden lg:hidden border-b border-[#2C3B4D]/15 bg-[#F6F4EE] px-5 py-4 shadow-lg">
+        <nav class="flex flex-col space-y-3 text-sm font-medium text-[#1E2D24]">
+          <a href="#filosofi" class="tap-target py-2 border-b border-[#2C3B4D]/10">Filosofi Tradisi</a>
+          <a href="#resep-botani" class="tap-target py-2 border-b border-[#2C3B4D]/10">Resep Botani Kalimantan</a>
+          <a href="#proses-waktu" class="tap-target py-2 border-b border-[#2C3B4D]/10">Kronologi 10 Hari Kelahiran Kain</a>
+          <a href="#katalog" class="tap-target py-2 border-b border-[#2C3B4D]/10">Katalog Wastra & Busana</a>
+          <a href="#lokakarya" class="tap-target py-2 border-b border-[#2C3B4D]/10">Jadwal Lokakarya Studio</a>
+          <a href="#perajin" class="tap-target py-2 border-b border-[#2C3B4D]/10">Buku Ibu Perajin Jelujur</a>
+          <a href="#lokasi" class="tap-target py-2 border-b border-[#2C3B4D]/10">Lokasi & Kontak</a>
+          <a
+            href="https://wa.me/6281255501928?text=Halo%20Studio%20DDaunan"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="tap-target mt-2 inline-flex items-center justify-center rounded-full bg-[#1E2D24] py-3 text-xs font-semibold text-[#F6F4EE]"
+          >
+            Hubungi WhatsApp Studio
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- SEC-02: Hero Section (The Showstopper) -->
+      <section class="relative min-h-[92dvh] pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
+        <!-- Single Dose Ambient Light Glow (Dose Cap: 1 focal point) -->
+        <div class="pointer-events-none absolute -top-24 right-0 h-[420px] w-[420px] rounded-full bg-[#8A5A12]/8 blur-[120px]"></div>
+
+        <div class="mx-auto max-w-7xl px-5 sm:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+            <!-- Left Column: Narrative & CTA Cluster -->
+            <div class="lg:col-span-6 space-y-6">
+              <div class="inline-flex items-center gap-2 rounded-full border border-[#8A5A12]/30 bg-[#8A5A12]/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-[#8A5A12]">
+                <span class="h-1.5 w-1.5 rounded-full bg-[#8A5A12] animate-pulse"></span>
+                <span>Seberang Mesjid, Banjarmasin</span>
+              </div>
+
+              <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-[#1E2D24] leading-[1.08]">
+                Wastra Sasirangan Murni Warna Alam
+              </h1>
+
+              <p class="font-sans text-base sm:text-lg text-[#526356] leading-relaxed max-w-xl">
+                Menjaga warisan jelujur tangan Banjar dengan pigmen dedaunan Kalimantan. Kami mengolah busana adem bernilai tradisi tanpa menyisakan limbah kimia di aliran Sungai Martapura.
+              </p>
+
+              <!-- CTA Cluster -->
+              <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                <a
+                  href="#katalog"
+                  class="tap-target inline-flex items-center justify-center rounded-full bg-[#1E2D24] px-8 py-3.5 text-sm font-semibold text-[#F6F4EE] transition-all hover:bg-[#8A5A12] hover:shadow-md active:scale-95"
+                >
+                  Lihat Katalog Busana & Kain
+                </a>
+
+                <a
+                  href="#lokakarya"
+                  class="tap-target inline-flex items-center justify-center rounded-full border border-[#2C3B4D]/30 bg-transparent px-6 py-3.5 text-sm font-semibold text-[#1E2D24] transition-all hover:bg-[#E4E7DF] active:scale-95"
+                >
+                  <span>Daftar Lokakarya Studio</span>
+                  <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+              </div>
+
+              <!-- First-Day Trust Badge -->
+              <div class="flex items-center gap-3 pt-4 border-t border-[#2C3B4D]/10 text-xs text-[#526356]">
+                <svg class="h-5 w-5 text-[#8A5A12] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                <span>100% Pewarna Botani Alami • Formula Terbuka • Nol Residu Beracun ke Sungai</span>
+              </div>
+            </div>
+
+            <!-- Right Column: Interactive Botanical Pigment Visualizer -->
+            <div id="resep-botani" class="lg:col-span-6">
+              <div id="visualizer-container">
+                <!-- Rendered dynamically by visualizer.js -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEC-03: River Origin & Trust Strip -->
+      <section class="border-y border-[#2C3B4D]/15 bg-[#E4E7DF] py-8">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="space-y-1">
+              <span class="block font-serif text-2xl sm:text-3xl font-bold text-[#1E2D24]">Seberang Mesjid</span>
+              <p class="text-xs font-semibold tracking-wider uppercase text-[#8A5A12]">Sentra Kampung Sasirangan</p>
+            </div>
+            <div class="space-y-1">
+              <span class="block font-serif text-2xl sm:text-3xl font-bold text-[#1E2D24]">100% Botani</span>
+              <p class="text-xs font-semibold tracking-wider uppercase text-[#8A5A12]">Ketapang, Ulin & Indigo</p>
+            </div>
+            <div class="space-y-1">
+              <span class="block font-serif text-2xl sm:text-3xl font-bold text-[#1E2D24]">0% Logam Berat</span>
+              <p class="text-xs font-semibold tracking-wider uppercase text-[#8A5A12]">Air Bilasan Aman ke Tanah</p>
+            </div>
+            <div class="space-y-1">
+              <span class="block font-serif text-2xl sm:text-3xl font-bold text-[#1E2D24]">30 Hari Garansi</span>
+              <p class="text-xs font-semibold tracking-wider uppercase text-[#8A5A12]">Jaminan Perawatan Warna</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEC-04: River Rescue & Craft Story (The Philosophy & Antagonist) -->
+      <section id="filosofi" class="py-20 md:py-28">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5 relative">
+              <div class="aspect-[4/5] overflow-hidden rounded-3xl border border-[#2C3B4D]/15 shadow-botanical">
+                <img
+                  src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=80"
+                  alt="Proses perebusan alami kain Sasirangan di pekarangan DDaunan"
+                  class="h-full w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="absolute -bottom-6 -right-4 rounded-2xl border border-[#2C3B4D]/15 bg-white p-5 shadow-lg max-w-[260px] hidden sm:block">
+                <p class="text-xs font-semibold text-[#8A5A12] uppercase tracking-wider">Komitmen Lingkungan</p>
+                <p class="mt-1 font-serif text-sm font-medium text-[#1E2D24]">
+                  "Air sisa celupan dedaunan kami gunakan kembali untuk menyiram tanaman pekarangan studio."
+                </p>
+              </div>
+            </div>
+
+            <div class="lg:col-span-7 space-y-6">
+              <span class="text-xs font-semibold tracking-[0.2em] uppercase text-[#8A5A12]">Melindungi Sungai Martapura</span>
+              <h2 class="font-serif text-3xl sm:text-5xl font-medium tracking-tight text-[#1E2D24] leading-tight">
+                Menghidupkan Tradisi Tanpa Meracuni Aliran Air
+              </h2>
+              <p class="font-sans text-base sm:text-lg text-[#526356] leading-relaxed">
+                Selama puluhan tahun, sebagian produksi kain konvensional mencemari parit dan Sungai Martapura dengan limbah pewarna kimia sintetis (napthol dan indanthrene). DDaunan hadir untuk membuktikan bahwa keindahan motif klasik Banjar dapat hidup berdampingan secara damai dengan kejernihan air sungai.
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                <div class="rounded-2xl border border-red-200 bg-red-50/50 p-5">
+                  <h4 class="font-serif text-lg font-semibold text-red-900">Praktik Sintetis Kimia</h4>
+                  <ul class="mt-2 space-y-1.5 text-xs text-red-700">
+                    <li>• Aroma zat kimia menyengat pada kain</li>
+                    <li>• Residu logam berat terbuang ke sungai</li>
+                    <li>• Risiko iritasi pada kulit sensitif</li>
+                  </ul>
+                </div>
+
+                <div class="rounded-2xl border border-[#2C3B4D]/20 bg-[#E4E7DF] p-5">
+                  <h4 class="font-serif text-lg font-semibold text-[#1E2D24]">Metode Botani DDaunan</h4>
+                  <ul class="mt-2 space-y-1.5 text-xs text-[#1E2D24]">
+                    <li>• Wangi lembut dedaunan dan rempah alami</li>
+                    <li>• Tanpa limbah beracun ke saluran air</li>
+                    <li>• Sejuk, adem, dan ramah di kulit tubuh</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEC-09: 10-Day Botanical Craftsmanship Timeline (Fitur Premium) -->
+      <section id="proses-waktu" class="py-20 md:py-28 border-t border-[#2C3B4D]/10 bg-[#F6F4EE]">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8">
+          <div class="text-center max-w-3xl mx-auto space-y-3 pb-14">
+            <span class="text-xs font-semibold tracking-[0.2em] uppercase text-[#8A5A12]">Mahakarya Waktu & Kesabaran</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-medium tracking-tight text-[#1E2D24]">
+              Kronologi 10 Hari Kelahiran Sehelai Kain
+            </h2>
+            <p class="text-base text-[#526356] leading-relaxed">
+              Kami tidak memproduksi kain secara kilat dengan mesin. Setiap lembar wastra DDaunan membutuhkan dedikasi sepuluh hari disiplin tangan dan keselarasan alam pekarangan Seberang Mesjid.
+            </p>
+          </div>
+
+          <!-- Interactive Stepper Container -->
+          <div id="timeline-interactive-container">
+            <!-- Rendered dynamically by timeline.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- SEC-05: Core Offerings Dynamic Bento Catalog -->
+      <section id="katalog" class="py-20 md:py-28 bg-[#E4E7DF]/40 border-t border-[#2C3B4D]/10">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12">
+            <div>
+              <span class="text-xs font-semibold tracking-[0.2em] uppercase text-[#8A5A12]">Pilihan Koleksi Unggulan</span>
+              <h2 class="mt-2 font-serif text-3xl sm:text-5xl font-medium tracking-tight text-[#1E2D24]">
+                Katalog Wastra & Busana Siap Pakai
+              </h2>
+            </div>
+            <p class="max-w-md text-sm text-[#526356] leading-relaxed">
+              Setiap helai kain dikerjakan tangan oleh ibu-ibu perajin Seberang Mesjid dengan dedikasi penuh ketelitian.
+            </p>
+          </div>
+
+          <!-- Dynamic Bento Grid Container -->
+          <div id="bento-grid-container" class="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
+            <!-- Rendered by bento.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- SEC-06: Open Studio & Workshop Experience -->
+      <section id="lokakarya" class="py-20 md:py-28">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8">
+          <div class="text-center max-w-2xl mx-auto space-y-3 pb-16">
+            <span class="text-xs font-semibold tracking-[0.2em] uppercase text-[#8A5A12]">Pengalaman Sentra Seberang Mesjid</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-medium tracking-tight text-[#1E2D24]">
+              Lokakarya Pewarna Alam Studio Terbuka
+            </h2>
+            <p class="text-base text-[#526356] leading-relaxed">
+              Rasakan pengalaman menarik benang jelujur, meracik rebusan daun segar, dan membawa pulang kain karya tangan sendiri dari Kampung Sasirangan.
+            </p>
+          </div>
+
+          <!-- 4 Workshop Steps -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pb-16">
+            <div class="rounded-2xl border border-[#2C3B4D]/15 bg-white p-6 shadow-sm">
+              <span class="font-serif text-3xl font-bold text-[#8A5A12]">01</span>
+              <h4 class="mt-3 font-serif text-lg font-semibold text-[#1E2D24]">Memola Motif</h4>
+              <p class="mt-2 text-xs text-[#526356] leading-relaxed">Menggambar pola klasik Banjar Gigi Haruan di atas kain katun mori halus menggunakan pensil.</p>
+            </div>
+
+            <div class="rounded-2xl border border-[#2C3B4D]/15 bg-white p-6 shadow-sm">
+              <span class="font-serif text-3xl font-bold text-[#8A5A12]">02</span>
+              <h4 class="mt-3 font-serif text-lg font-semibold text-[#1E2D24]">Menjelujur Sirang</h4>
+              <p class="mt-2 text-xs text-[#526356] leading-relaxed">Menusukkan jarum dan menarik ikatan benang katun kuat untuk merintangi masuknya warna cairan daun.</p>
+            </div>
+
+            <div class="rounded-2xl border border-[#2C3B4D]/15 bg-white p-6 shadow-sm">
+              <span class="font-serif text-3xl font-bold text-[#8A5A12]">03</span>
+              <h4 class="mt-3 font-serif text-lg font-semibold text-[#1E2D24]">Mencelup Botani</h4>
+              <p class="mt-2 text-xs text-[#526356] leading-relaxed">Mencelupkan kain ke dalam kuali ekstrak daun ketapang atau indigo hangat, disusul fiksasi tawas alami.</p>
+            </div>
+
+            <div class="rounded-2xl border border-[#2C3B4D]/15 bg-white p-6 shadow-sm">
+              <span class="font-serif text-3xl font-bold text-[#8A5A12]">04</span>
+              <h4 class="mt-3 font-serif text-lg font-semibold text-[#1E2D24]">Membuka Ikatan</h4>
+              <p class="mt-2 text-xs text-[#526356] leading-relaxed">Membuka jahitan benang untuk menyaksikan kemunculan motif putih bergradasi. Kain langsung dibawa pulang.</p>
+            </div>
+          </div>
+
+          <!-- Interactive Booking Card -->
+          <div class="rounded-3xl border border-[#2C3B4D]/20 bg-[#E4E7DF] p-8 md:p-12 shadow-botanical">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div class="lg:col-span-7 space-y-3">
+                <span class="text-xs font-semibold tracking-wider uppercase text-[#8A5A12]">Pendaftaran Langsung</span>
+                <h3 class="font-serif text-2xl sm:text-4xl font-medium text-[#1E2D24]">
+                  Pilih Jadwal & Reservasi Tempat Anda
+                </h3>
+                <p class="text-sm text-[#526356] leading-relaxed">
+                  Kelas berlangsung selama 2 jam di studio terbuka DDaunan Seberang Mesjid. Sudah termasuk kain katun mori, bahan pewarna botani lengkap, dan jamuan teh herbal Banjar.
+                </p>
+                <p class="text-xs font-semibold text-[#1E2D24]">
+                  Biaya Lokakarya: <span class="text-[#8A5A12]">Rp 225.000 / Peserta</span> (Kain hasil karya langsung menjadi milik Anda)
+                </p>
+              </div>
+
+              <div class="lg:col-span-5 bg-white p-6 rounded-2xl border border-[#2C3B4D]/15 shadow-sm space-y-4">
+                <div>
+                  <label for="workshop-session" class="block text-xs font-semibold text-[#1E2D24] mb-1">Pilihan Sesi Lokakarya</label>
+                  <select id="workshop-session" class="tap-target w-full rounded-xl border border-[#2C3B4D]/20 bg-[#F6F4EE] px-4 py-2 text-xs font-medium text-[#1E2D24]">
+                    <option value="Sabtu Pagi (09.30 WITA)">Sabtu Pagi (09.30 WITA) - Kelas Reguler</option>
+                    <option value="Sabtu Siang (14.00 WITA)">Sabtu Siang (14.00 WITA) - Kelas Reguler</option>
+                    <option value="Minggu Pagi (09.30 WITA)">Minggu Pagi (09.30 WITA) - Kelas Reguler</option>
+                    <option value="Sesi Khusus Privat Komunitas">Sesi Khusus Privat Komunitas (Jadwal Menyesuaikan)</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="workshop-count" class="block text-xs font-semibold text-[#1E2D24] mb-1">Jumlah Peserta</label>
+                  <select id="workshop-count" class="tap-target w-full rounded-xl border border-[#2C3B4D]/20 bg-[#F6F4EE] px-4 py-2 text-xs font-medium text-[#1E2D24]">
+                    <option value="1 Orang">1 Orang Peserta</option>
+                    <option value="2 Orang">2 Orang Peserta</option>
+                    <option value="3-5 Orang">Grup Kecil (3 - 5 Orang)</option>
+                    <option value="Rombongan 6+ Orang">Rombongan Komunitas (6+ Orang)</option>
+                  </select>
+                </div>
+
+                <a
+                  id="workshop-book-btn"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="tap-target w-full rounded-full bg-[#1E2D24] px-6 py-3 text-center text-xs font-semibold text-[#F6F4EE] transition-all hover:bg-[#8A5A12] active:scale-95 shadow-sm"
+                >
+                  Konfirmasi Slot via WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEC-07: First-Day Trust Anchors -->
+      <section class="py-20 md:py-28 bg-white border-t border-[#2C3B4D]/10">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8">
+          <div class="text-center max-w-xl mx-auto space-y-2 pb-14">
+            <span class="text-xs font-semibold tracking-[0.2em] uppercase text-[#8A5A12]">Kejujuran Kerajinan</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-medium tracking-tight text-[#1E2D24]">
+              Empat Janji Nyata DDaunan
+            </h2>
+            <p class="text-sm text-[#526356]">Kami membangun kepercayaan dari transparansi bahan, bukan ulasan rekaan.</p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="rounded-2xl border border-[#2C3B4D]/15 bg-[#F6F4EE] p-6 space-y-3">
+              <div class="h-10 w-10 rounded-full bg-[#8A5A12]/15 flex items-center justify-center text-[#8A5A12]">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              </div>
+              <h4 class="font-serif text-lg font-semibold text-[#1E2D24]">Open Recipe Terbuka</h4>
+              <p class="text-xs text-[#526356] leading-relaxed">Setiap helai kain menyertakan kartu asal tanaman, jenis fiksator alami, dan tanggal produksi tanpa formula yang ditutup-tutupi.</p>
+            </div>
+
+            <div class="rounded-2xl border border-[#2C3B4D]/15 bg-[#F6F4EE] p-6 space-y-3">
+              <div class="h-10 w-10 rounded-full bg-[#8A5A12]/15 flex items-center justify-center text-[#8A5A12]">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              </div>
+              <h4 class="font-serif text-lg font-semibold text-[#1E2D24]">Garansi 30 Hari Perawatan</h4>
+              <p class="text-xs text-[#526356] leading-relaxed">Jika terjadi kelunturan abnormal pada pencucian pertama sesuai panduan, kami memberikan layanan perbaikan warna atau penggantian kain.</p>
+            </div>
+
+            <div class="rounded-2xl border border-[#2C3B4D]/15 bg-[#F6F4EE] p-6 space-y-3">
+              <div class="h-10 w-10 rounded-full bg-[#8A5A12]/15 flex items-center justify-center text-[#8A5A12]">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+              </div>
+              <h4 class="font-serif text-lg font-semibold text-[#1E2D24]">Sabun Lerak Gratis</h4>
+              <p class="text-xs text-[#526356] leading-relaxed">Setiap pembelian kain atau kemeja disertai sebotol cairan buah lerak alami untuk menjaga kecerahan pigmen tumbuhan bertahun-tahun.</p>
+            </div>
+
+            <div class="rounded-2xl border border-[#2C3B4D]/15 bg-[#F6F4EE] p-6 space-y-3">
+              <div class="h-10 w-10 rounded-full bg-[#8A5A12]/15 flex items-center justify-center text-[#8A5A12]">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+              </div>
+              <h4 class="font-serif text-lg font-semibold text-[#1E2D24]">Apresiasi Perajin Lokal</h4>
+              <p class="text-xs text-[#526356] leading-relaxed">Label pakaian mencantumkan nama ibu perajin jelujur yang mengerjakannya sebagai wujud penghargaan atas ketelitian tangan warga lokal.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEC-11: Verified Artisan Ledger & Eco-Metrics (Arsitektur Kepercayaan) -->
+      <section id="perajin" class="py-20 md:py-28 bg-[#E4E7DF]/50 border-t border-[#2C3B4D]/10">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8">
+          <div class="text-center max-w-2xl mx-auto space-y-3 pb-14">
+            <span class="text-xs font-semibold tracking-[0.2em] uppercase text-[#8A5A12]">Buku Perajin Seberang Mesjid</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-medium tracking-tight text-[#1E2D24]">
+              Tangan-Tangan Penuh Kesabaran
+            </h2>
+            <p class="text-base text-[#526356] leading-relaxed">
+              Kami memuliakan ketelitian tangan para ibu penjelujur Kampung Sasirangan. Setiap helai pakaian menyertakan kartu fisik bertanda tangan perajin yang mengerjakannya.
+            </p>
+          </div>
+
+          <!-- 3 Artisan Cards Grid -->
+          <div id="artisan-ledger-container" class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 pb-16">
+            <!-- Rendered dynamically by timeline.js -->
+          </div>
+
+          <!-- Eco-Transparency Counter Strip -->
+          <div class="border-t border-[#2C3B4D]/15 pt-12">
+            <div class="text-center max-w-xl mx-auto pb-8">
+              <span class="text-xs font-semibold tracking-[0.2em] uppercase text-[#8A5A12]">Transparansi Ekologis</span>
+              <h3 class="font-serif text-2xl sm:text-3xl font-medium text-[#1E2D24] mt-1">Audit Lingkungan Sungai Martapura</h3>
+            </div>
+            <div id="eco-metrics-container" class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+              <!-- Rendered dynamically by timeline.js -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEC-08: Location Map & Conversion Footer -->
+      <section id="lokasi" class="py-20 md:py-28 bg-[#1E2D24] text-[#F6F4EE]">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Studio Details -->
+            <div class="lg:col-span-6 space-y-6">
+              <span class="text-xs font-semibold tracking-[0.2em] uppercase text-[#8A5A12]">Kunjungi Studio Fisik Kami</span>
+              <h2 class="font-serif text-3xl sm:text-5xl font-medium tracking-tight text-[#F6F4EE] leading-tight">
+                Pintu Kami Selalu Terbuka di Seberang Mesjid
+              </h2>
+              <p class="text-sm text-[#E4E7DF]/80 leading-relaxed max-w-lg">
+                Saksikan langsung aroma rebusan dedaunan, kuali perendaman alami, dan jemuran kain Sasirangan di pekarangan studio kami di pusat Kampung Sasirangan Banjarmasin.
+              </p>
+
+              <div class="space-y-4 pt-2 text-xs">
+                <div class="flex items-start gap-3">
+                  <svg class="h-5 w-5 text-[#8A5A12] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <div>
+                    <span class="font-semibold text-white">Alamat Studio:</span>
+                    <p class="text-[#E4E7DF]/80 mt-0.5">Jl. Seberang Mesjid Gg. Paris RT.06/RW.01, Kel. Seberang Mesjid, Kec. Banjarmasin Tengah, Kota Banjarmasin, Kalimantan Selatan 70114</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <svg class="h-5 w-5 text-[#8A5A12] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <div>
+                    <span class="font-semibold text-white">Jam Operasional:</span>
+                    <p class="text-[#E4E7DF]/80 mt-0.5">Senin - Sabtu: 09.00 - 17.00 WITA (Hari Minggu dengan perjanjian khusus)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-4 flex flex-wrap gap-4">
+                <a
+                  href="https://maps.google.com/?q=Seberang+Mesjid+Banjarmasin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="tap-target inline-flex items-center rounded-full bg-white/10 px-6 py-3 text-xs font-semibold text-white border border-white/20 transition-all hover:bg-white/20 active:scale-95"
+                >
+                  <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                  Buka Petunjuk Arah Google Maps
+                </a>
+
+                <a
+                  href="https://wa.me/6281255501928?text=Halo%20Studio%20DDaunan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="tap-target inline-flex items-center rounded-full bg-[#8A5A12] px-6 py-3 text-xs font-semibold text-white transition-all hover:bg-[#8A5A12]/80 active:scale-95 shadow-md"
+                >
+                  Hubungi WhatsApp Studio
+                </a>
+              </div>
+            </div>
+
+            <!-- Visual Studio Preview Card -->
+            <div class="lg:col-span-6">
+              <div class="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl space-y-4">
+                <div class="aspect-[16/10] overflow-hidden rounded-2xl bg-black/20">
+                  <img
+                    src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80"
+                    alt="Aktivitas di Studio DDaunan Seberang Mesjid"
+                    class="h-full w-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="flex items-center justify-between text-xs text-[#E4E7DF]/70">
+                  <span>Kampung Sasirangan, Seberang Mesjid</span>
+                  <span class="rounded-full bg-emerald-500/20 px-2.5 py-0.5 text-emerald-300 font-medium">Buka Hari Ini</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Copyright Strip -->
+          <div class="mt-16 border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#E4E7DF]/60 gap-4">
+            <p>© 2026 DDaunan. Wastra Sasirangan Murni Warna Alam. Hak cipta dilindungi.</p>
+            <p class="flex items-center gap-1">
+              <span>Menjaga tradisi Banjar & kelestarian Sungai Martapura</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Mobile-First Floating Action WhatsApp Button -->
+    <aside aria-label="Aksi Cepat WhatsApp" class="fixed bottom-6 right-6 z-50">
+      <a
+        href="https://wa.me/6281255501928?text=Halo%20Studio%20DDaunan,%20saya%20ingin%20berkonsultasi%20tentang%20wastra%20pewarna%20alam"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="tap-target group flex items-center gap-2.5 rounded-full bg-[#1E2D24] pl-4 pr-5 py-3 text-xs font-semibold text-[#F6F4EE] shadow-2xl transition-all duration-300 hover:bg-[#8A5A12] hover:scale-105 active:scale-95 border border-[#8A5A12]/40"
+        aria-label="Tanya via WhatsApp"
+      >
+        <span class="relative flex h-3 w-3">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+        </span>
+        <svg class="h-4 w-4 text-[#F6F4EE]" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        <span class="tracking-wide">Tanya via WhatsApp</span>
+      </a>
+    </aside>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

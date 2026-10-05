@@ -1,0 +1,268 @@
+export const brandInfo = {
+  name: 'DDaunan',
+  tagline: 'Wastra Sasirangan Murni Warna Alam',
+  subtitle: 'Dari Jantung Kampung Seberang Mesjid, Banjarmasin',
+  address: 'Jl. Seberang Mesjid Gg. Paris RT.06/RW.01, Kel. Seberang Mesjid, Kec. Banjarmasin Tengah, Kota Banjarmasin, Kalimantan Selatan 70114',
+  whatsapp: '6281255501928',
+  operationalHours: 'Senin - Sabtu: 09.00 - 17.00 WITA (Minggu dengan reservasi khusus)',
+  coordinates: 'Banjarmasin Tengah, Kalimantan Selatan',
+}
+
+export const botanicalPigments = [
+  {
+    id: 'ketapang',
+    name: 'Daun Ketapang Tua',
+    latinName: 'Terminalia catappa',
+    colorName: 'Hijau Zaitun Redup (Muted Olive)',
+    colorHex: '#3D4A3E',
+    motif: 'Motif Gigi Haruan',
+    motifMeaning: 'Simbol ketajaman berpikir dan ketangkasan pemimpin Banjar dalam mengambil keputusan bijak.',
+    mordant: 'Tawas Alami & Kapur Sirih',
+    processDetail: 'Rebusan 4 jam daun ketapang kering yang gugur di pekarangan Seberang Mesjid, melalui 15 kali pencelupan manual bertahap.',
+    imageUrl: 'https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=80',
+    tag: 'Paling Diminati',
+  },
+  {
+    id: 'ulin',
+    name: 'Getah & Kulit Kayu Ulin',
+    latinName: 'Eusideroxylon zwageri',
+    colorName: 'Cokelat Tembaga Teduh (Warm Timber)',
+    colorHex: '#5C4033',
+    motif: 'Motif Bayam Raja',
+    motifMeaning: 'Lambang kehormatan, derajat luhur, dan perlindungan bagi keluarga yang mengenakannya.',
+    mordant: 'Karat Besi & Air Tunjung',
+    processDetail: 'Memanfaatkan serpihan sisa kayu ulin tua Kalimantan yang direndam berhari-hari menghasilkan rona cokelat legam abadi.',
+    imageUrl: 'https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?auto=format&fit=crop&w=900&q=80',
+    tag: 'Klasik Banjar',
+  },
+  {
+    id: 'indigo',
+    name: 'Fermentasi Indigofera',
+    latinName: 'Indigofera tinctoria',
+    colorName: 'Biru Sungai Martapura (River Slate Blue)',
+    colorHex: '#253B4B',
+    motif: 'Motif Kangkung Kaombakan',
+    motifMeaning: 'Filosofi keteguhan pendirian yang lentur mengarungi riak gelombang kehidupan tanpa patah.',
+    mordant: 'Gula Merah & Tetes Tebu',
+    processDetail: 'Fermentasi daun pasta nila dalam gentong tanah liat tertutup selama 7 hari, tanpa natrium hidrosulfit sintetis.',
+    imageUrl: 'https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=900&q=80',
+    tag: 'Warisan Sungai',
+  },
+  {
+    id: 'kunyit',
+    name: 'Kunyit Rimba & Kayu Tegeran',
+    latinName: 'Curcuma longa & Cudrania javanensis',
+    colorName: 'Kuning Keemasan Rimba (Botanical Ochre)',
+    colorHex: '#8A5A12',
+    motif: 'Motif Hiris Pudak',
+    motifMeaning: 'Aroma harum budi pekerti dan ketulusan hati yang memikat siapa saja yang memandangnya.',
+    mordant: 'Garam Bukit & Air Jeruk Nipis',
+    processDetail: 'Perasan rimpang kunyit tua dipadu rebusan kayu tegeran menghasilkan rona emas hangat beraroma rempah segar.',
+    imageUrl: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=80',
+    tag: 'Aroma Alami',
+  },
+]
+
+export const offeringsCatalog = [
+  {
+    id: 'ready-to-wear',
+    tier: 'Flagship Utama',
+    title: 'Kemeja Kasual Santai & Outer Tropis',
+    subtitle: 'Potongan leher terbuka (camp collar) dan rompi santai',
+    description: 'Didesain khusus untuk iklim tropis Kalimantan. Menggunakan bahan katun primissima super adem dengan jahitan jelujur tangan halus, nyaman untuk aktivitas kerja harian maupun santai akhir pekan.',
+    price: 'Rp 650.000 - Rp 780.000',
+    material: '100% Katun Mori Halus & Pewarna Botani',
+    badge: 'Pilihan Terpopuler',
+    gridClass: 'lg:col-span-2 lg:row-span-2',
+    imageUrl: 'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1000&q=80',
+    features: ['Potongan longgar modern', 'Label nama ibu penjelujur', 'Bonus botol sabun lerak'],
+  },
+  {
+    id: 'kain-lembaran',
+    tier: 'Koleksi Wastra',
+    title: 'Kain Sasirangan Primissima 2 Meter',
+    subtitle: 'Motif klasik Gigi Haruan & Bayam Raja',
+    description: 'Lembaran kain siap jahit dengan kerapatan benang jelujur sirang tinggi. Cocok untuk busana formal, atasan kerja resmi, atau kain lilit upacara adat Banjar.',
+    price: 'Rp 450.000 - Rp 580.000',
+    material: 'Katun Primissima 2.0 × 1.15 meter',
+    badge: 'Wastra Warisan',
+    gridClass: 'lg:col-span-1 lg:row-span-2',
+    imageUrl: 'https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?auto=format&fit=crop&w=800&q=80',
+    features: ['15 kali celup botani bertahap', 'Warna matang tahan cuci', 'Kartu resep formula botani'],
+  },
+  {
+    id: 'aksesoris-cenderamata',
+    tier: 'Starter Entry',
+    title: 'Scarf, Bandana & Tote Bag Botani',
+    subtitle: 'Cenderamata ramah lingkungan praktis',
+    description: 'Aksesoris serbaguna dari perca kain katun alami pilihan dengan motif Sasirangan mini yang manis untuk buah tangan khas Banjarmasin.',
+    price: 'Rp 150.000 - Rp 275.000',
+    material: 'Serat Katun Mori Organik',
+    badge: 'Cinderamata Favorit',
+    gridClass: 'lg:col-span-1 lg:row-span-1',
+    imageUrl: 'https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=800&q=80',
+    features: ['Mudah dipadukan sehari-hari', 'Ringan dan praktis dibawa', 'Kemasan kertas daur ulang'],
+  },
+  {
+    id: 'sutra-eksklusif',
+    tier: 'Bespoke Mahakarya',
+    title: 'Selendang Sutra Gradasi Botani Eksklusif',
+    subtitle: 'Kain sutra tenun pesanan khusus',
+    description: 'Karya seni tingkat tinggi memadukan kilau sutra alami dengan gradasi warna indigofera dan getah ulin. Diproduksi terbatas 5 helai per bulan.',
+    price: 'Rp 1.250.000 - Rp 2.400.000',
+    material: 'Sutra ATBM Tenun Asli',
+    badge: 'Koleksi Terbatas',
+    gridClass: 'lg:col-span-2 lg:row-span-1',
+    imageUrl: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1000&q=80',
+    features: ['Gradasi warna 3 lapis rumit', 'Sertifikat keaslian bernomor', 'Kotak kayu ulin eksklusif'],
+  },
+]
+
+export const trustAnchors = [
+  {
+    icon: 'leaf',
+    title: 'Open Recipe Transparan',
+    subtitle: '100% Botani Kalimantan',
+    description: 'Setiap helai kain menyertakan kartu asal tanaman, jenis fiksator alami, dan tanggal produksi. Kami tidak menyembunyikan formula pewarna kami.',
+  },
+  {
+    icon: 'shield-check',
+    title: 'Garansi 30 Hari Perawatan',
+    subtitle: 'Jaminan Warna Stabil',
+    description: 'Jika terjadi kelunturan abnormal pada pencucian pertama sesuai panduan, kami memberikan layanan perbaikan warna atau penggantian kain secara cuma-cuma.',
+  },
+  {
+    icon: 'sparkles',
+    title: 'Sabun Lerak Alami Gratis',
+    subtitle: 'Perawatan Serat Organik',
+    description: 'Setiap pembelian kain atau kemeja disertai sebotol cairan buah lerak alami untuk menjaga kecerahan pigmen tumbuhan bertahun-tahun.',
+  },
+  {
+    icon: 'heart-handshake',
+    title: 'Apresiasi Penjahit Lokal',
+    subtitle: 'Pemberdayaan Kampung',
+    description: 'Label pakaian mencantumkan nama ibu perajin jelujur yang mengerjakannya, memberikan penghargaan nyata atas ketelitian tangan warga Seberang Mesjid.',
+  },
+]
+
+export const workshopSteps = [
+  {
+    step: '01',
+    title: 'Memola & Merancang Motif',
+    desc: 'Menggambar pola klasik Banjar (Gigi Haruan atau Hiris Pudak) di atas kain katun mori menggunakan pensil lunak.',
+  },
+  {
+    step: '02',
+    title: 'Menjelujur & Menyisit (Sirang)',
+    desc: 'Menusukkan jarum dengan benang katun kuat mengikuti pola, lalu menarik benang sekencang mungkin untuk merintangi masuknya warna.',
+  },
+  {
+    step: '03',
+    title: 'Mencelup Ekstrak Tumbuhan',
+    desc: 'Mencelupkan kain ke dalam kuali rebusan daun ketapang atau indigo hangat, disusul fiksasi dengan tawas dan kapur alami.',
+  },
+  {
+    step: '04',
+    title: 'Membuka Ikatan & Membawa Pulang',
+    desc: 'Membuka jahitan jelujur benang untuk menyaksikan kemunculan motif putih bertepi gradasi alami. Kain hasil karya langsung menjadi milik peserta.',
+  },
+]
+
+export const craftsmanshipTimeline = [
+  {
+    phase: 'Fase 01',
+    days: 'Hari 1 - 2',
+    title: 'Peracikan Ekstrak Daun & Getah Ulin',
+    action: 'Perebusan Kuali Tembaga 4 Jam',
+    desc: 'Mengumpulkan dedaunan ketapang gugur dan serutan kayu ulin tua Kalimantan. Direbus perlahan pada suhu stabil untuk mengeluarkan konsentrat pigmen organik pekat tanpa bahan kimia aditif.',
+    imageUrl: 'https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=80',
+    detail: 'Bahan Baku: 12 kg dedaunan segar menghasilkan 4 liter pigmen murni.',
+  },
+  {
+    phase: 'Fase 02',
+    days: 'Hari 3 - 5',
+    title: 'Ketelitian Jelujur Tangan (Sirang)',
+    action: 'Ratusan Tusukan Jarum Presisi',
+    desc: 'Kain katun primissima dipola dengan motif klasik Gigi Haruan atau Bayam Raja. Ibu-ibu penjelujur menjahit ribuan titik jelujur rapat lalu menarik benang sekuat tenaga untuk merintangi warna.',
+    imageUrl: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80',
+    detail: 'Ketelitian: Kerapatan tusukan jarum 3 mm menentukan ketajaman motif putih.',
+  },
+  {
+    phase: 'Fase 03',
+    days: 'Hari 6 - 8',
+    title: '15 Kali Pencelupan Bertahap',
+    action: 'Siklus Rendam & Aerasi Angin',
+    desc: 'Kain tidak diwarnai sekaligus dalam satu celupan pekat. Kami mencelupkannya berulang 15 kali, diiringi jeda penjemuran angin sejuk di bawah naungan pohon pekarangan Seberang Mesjid.',
+    imageUrl: 'https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?auto=format&fit=crop&w=800&q=80',
+    detail: 'Konsistensi: Setiap lapis celup mengikat serat katun mori secara permanen.',
+  },
+  {
+    phase: 'Fase 04',
+    days: 'Hari 9',
+    title: 'Fiksasi Mineral Alami',
+    action: 'Penguncian Warna Tanpa Logam Berat',
+    desc: 'Warna dikunci menggunakan rendaman tawas alami, kapur sirih, atau air tunjung berkarat besi sesuai rona yang dituju. Air sisa rendaman aman diserap tanah tanpa mencemari air tanah.',
+    imageUrl: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
+    detail: 'Keamanan: 0% limbah beracun, aman bagi biota aliran Sungai Martapura.',
+  },
+  {
+    phase: 'Fase 05',
+    days: 'Hari 10',
+    title: 'Pelepasan Jelujur & Pembilasan',
+    action: 'Kelahiran Motif & Quality Gate',
+    desc: 'Benang sirang dilepas satu demi satu dengan pisau kecil khusus. Motif klasik putih bersih terungkap dengan tepian gradasi lembut yang memukau, siap disetrika dan diberi label nama perajin.',
+    imageUrl: 'https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=800&q=80',
+    detail: 'Hasil Akhir: Kain adem, beraroma rempah segar, siap dipakai bertahun-tahun.',
+  },
+]
+
+export const artisanLedger = [
+  {
+    name: 'Acil Aminah',
+    age: '54 Tahun',
+    experience: '28 Tahun Mengabdi',
+    specialty: 'Spesialis Jelujur Halus Gigi Haruan',
+    quote: 'Menarik benang sirang itu bukan soal tenaga, tapi rasa sabar. Kalau buru-buru, warna dedaunan bisa rembes dan motifnya jadi kabur.',
+    imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80',
+  },
+  {
+    name: 'Ibu Rusnah',
+    age: '47 Tahun',
+    experience: '19 Tahun Mengabdi',
+    specialty: 'Peracik Fermentasi Getah Kayu Ulin',
+    quote: 'Kayu ulin memberi warna cokelat yang teduh seperti tanah Kalimantan. Kami menjaga resep leluhur ini agar anak cucu tidak lupa asal usulnya.',
+    imageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80',
+  },
+  {
+    name: 'Mbak Nurul',
+    age: '32 Tahun',
+    experience: '9 Tahun Mengabdi',
+    specialty: 'Pengembang Pasta Indigofera Nila',
+    quote: 'Saya bangga membuktikan bahwa pewarna alam bisa tampil modern dan bersaing. Tidak ada setetes pun racun kimia yang kami buang ke sungai.',
+    imageUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80',
+  },
+]
+
+export const ecoMetrics = [
+  {
+    value: '0 Gram',
+    label: 'Napthol Sintetis',
+    desc: 'Bebas total dari pewarna tekstil beracun yang mengendap di Sungai Martapura.',
+  },
+  {
+    value: '100%',
+    label: 'Ramah Pekarangan',
+    desc: 'Air bilasan dapat langsung disiramkan ke tanaman tanpa merusak ekosistem tanah.',
+  },
+  {
+    value: '15 Kali',
+    label: 'Celup Bertahap',
+    desc: 'Pencelupan manual berlapis untuk memastikan warna alami meresap hingga ke inti serat.',
+  },
+  {
+    value: '10 Hari',
+    label: 'Dedikasi Waktu',
+    desc: 'Karya seni penuh kesabaran yang memuliakan ketelitian tangan manusia lokal.',
+  },
+]
+
